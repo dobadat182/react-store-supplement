@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-    content: ['./src/**/*.{html,js,jsx,ts,tsx}'], // Đường dẫn đến tất cả các file HTML và JavaScript/TypeScript trong dự án của bạn
+    content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
     theme: {
         extend: {
             // Tùy chỉnh màu sắc
