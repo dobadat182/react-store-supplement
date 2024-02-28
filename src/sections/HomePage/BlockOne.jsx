@@ -16,7 +16,7 @@ const HeroSection = styled.section`
 
 const BlockOne = () => {
     return (
-        <HeroSection>
+        <HeroSection id="blockOne">
             <div className="relative flex items-center justify-center min-h-[900px] overflow-hidden">
                 <div className="absolute z-20 flex flex-col items-center max-w-3xl bottom-20">
                     <h1 className="mb-4 font-mono text-4xl font-extrabold leading-none tracking-tight text-center uppercase text-slate-300 md:text-5xl lg:text-6xl">
@@ -41,7 +41,7 @@ const BlockOne = () => {
                     <iframe
                         width="100%"
                         height="900"
-                        src="https://www.youtube.com/embed/W7NFoCfXAXU?si=g2cJL82F9TXvNyC9&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&rel=0&playlist=W7NFoCfXAXU"
+                        src="https://www.youtube.com/embed/W7NFoCfXAXU?si=g2cJL82F9TXvNyC9&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;rel=0&amp;playlist=W7NFoCfXAXU"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"

@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './assets/styles/global.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import './assets/styles/global.css';
+import '@splidejs/react-splide/css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
