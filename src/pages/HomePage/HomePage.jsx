@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BlockOne from '../../sections/HomePage/BlockOne';
 import BlockTwo from '../../sections/HomePage/BlockTwo';
+import BlockThree from '../../sections/HomePage/BlockThree';
 
 const HomeWrapper = styled.div``;
 
@@ -10,7 +11,7 @@ const HomePage = () => {
         <HomeWrapper>
             <BlockOne />
             <BlockTwo />
-
+            <BlockThree />
             <div className="max-w-screen-xl p-3 m-auto">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
                 tempora inventore quasi ipsum tempore quibusdam. Distinctio aut
