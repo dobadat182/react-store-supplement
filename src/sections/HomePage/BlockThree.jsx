@@ -1,14 +1,13 @@
 import React from 'react';
 import CardCategory from '../../components/common/Card/CardCategory/CardCategory';
 import styled from 'styled-components';
-import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const Section = styled.section``;
 
 const BlockThree = () => {
     const collectionArray = Array(10).fill('0');
-    console.log(collectionArray);
     return (
         <Section id="blockThree" className="p-10">
             <div className="container mx-auto">
@@ -25,7 +24,7 @@ const BlockThree = () => {
                         start: 1,
                         focus: 'center',
                         autoScroll: {
-                            pauseOnHover: false,
+                            pauseOnHover: true,
                             pauseOnFocus: false,
                             rewind: false,
                             speed: 1.5,
@@ -33,9 +32,9 @@ const BlockThree = () => {
                     }}
                     extensions={{ AutoScroll }}
                 >
-                    {collectionArray.map((items, index) => (
+                    {collectionArray.map((element, index) => (
                         <SplideSlide key={index}>
-                            <CardCategory />
+                            <CardCategory name={index} />
                         </SplideSlide>
                     ))}
                 </Splide>

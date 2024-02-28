@@ -1,7 +1,7 @@
 import React from 'react';
 const sampleImage = require('../../../../assets/images/products/multi-vitamins.jpeg');
 
-const CardCategory = () => {
+const CardCategory = (props) => {
     return (
         <a
             href="/"
@@ -13,11 +13,11 @@ const CardCategory = () => {
 
             <div className="flex flex-col justify-between p-4 leading-normal">
                 <h4 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 uppercase">
-                    Multivitamins
+                    Multivitamins {props.name}
                 </h4>
                 <p className="mb-3 font-normal text-gray-700">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Minima fugit mollitia eum sunt ab quam!
                 </p>
             </div>
         </a>
