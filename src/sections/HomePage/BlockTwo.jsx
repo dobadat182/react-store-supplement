@@ -10,6 +10,11 @@ const Section = styled.section`
         height: 100%;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
     }
+    .category-items {
+        &:hover .overlay {
+            filter: brightness(70%) blur(2px);
+        }
+    }
 `;
 
 const BlockTwo = () => {
@@ -17,7 +22,7 @@ const BlockTwo = () => {
         <Section className="p-10">
             <div className="container mx-auto">
                 <div className="grid grid-cols-3 gap-8">
-                    <div className="relative overflow-hidden rounded-2xl">
+                    <div className="relative overflow-hidden cursor-pointer category-items rounded-2xl">
                         <img
                             className="w-full"
                             src={require('../../assets/images/banners-1.jpg')}
@@ -32,7 +37,7 @@ const BlockTwo = () => {
                         </div>
                     </div>
 
-                    <div className="relative overflow-hidden rounded-2xl">
+                    <div className="relative overflow-hidden cursor-pointer category-items rounded-2xl">
                         <img
                             className="w-full"
                             src={require('../../assets/images/banners-2.jpg')}
@@ -46,7 +51,7 @@ const BlockTwo = () => {
                         </div>
                     </div>
 
-                    <div className="relative overflow-hidden rounded-2xl">
+                    <div className="relative overflow-hidden cursor-pointer category-items rounded-2xl">
                         <img
                             className="w-full"
                             src={require('../../assets/images/banners-3.jpg')}
