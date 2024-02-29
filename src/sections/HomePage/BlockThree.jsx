@@ -7,13 +7,39 @@ import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 const Section = styled.section``;
 
 const BlockThree = () => {
-    const collectionArray = Array(10).fill('0');
+    const collectionArray = [
+        {
+            id: 1,
+            name: 'Bodytech',
+        },
+        {
+            id: 2,
+            name: 'Multivitamins',
+        },
+        {
+            id: 3,
+            name: 'Muscle builders',
+        },
+        {
+            id: 4,
+            name: 'Plant based Protein',
+        },
+        {
+            id: 5,
+            name: 'Protein',
+        },
+        {
+            id: 6,
+            name: 'Whey protein',
+        },
+    ];
+
     return (
         <Section id="blockThree" className="p-10">
             <div className="container mx-auto">
                 <Splide
                     options={{
-                        perPage: 3,
+                        perPage: 4,
                         rewind: true,
                         width: 800,
                         gap: '1rem',
@@ -34,7 +60,7 @@ const BlockThree = () => {
                 >
                     {collectionArray.map((element, index) => (
                         <SplideSlide key={index}>
-                            <CardCategory name={index} />
+                            <CardCategory id={element.id} name={element.name} />
                         </SplideSlide>
                     ))}
                 </Splide>

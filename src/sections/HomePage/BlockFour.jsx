@@ -8,25 +8,28 @@ const blockFour = () => {
     return (
         <section id="blockFour">
             <div className="container mx-auto">
-                <div class="flex flex-row gap-x-5">
-                    <div class="w-2/6">
-                        <div className="flex items-end w-full h-full p-5 bg-blue-800 rounded-2xl">
+                <div className="flex flex-row gap-x-5">
+                    <div className="w-2/6">
+                        <div className="flex items-end w-full h-full p-5 bg-blue-800 bg- rounded-2xl">
                             <h2 className="text-3xl font-extrabold text-white uppercase">
                                 Deal <br />
                                 of the day.
                             </h2>
                         </div>
                     </div>
-                    <div class="w-2/3">
+                    <div className="w-2/3">
                         <div className="w-full h-full">
                             <Splide
                                 options={{
+                                    type: 'loop',
                                     perPage: 3,
                                     rewind: true,
                                     width: '100%',
+                                    padding: { right: 150 },
                                     gap: '15px',
                                     drag: 'free',
                                     pagination: false,
+                                    autoplay: true,
                                 }}
                             >
                                 {collectionArray.map((element, index) => (
